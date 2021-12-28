@@ -1,16 +1,14 @@
 {
     "manifest_version": 2,
-    "name": "diff-viewer",
+    "name": "Chrome Code Editor",
     "version": "0.0.1",
     "author": "mizutoki79",
-    "permissions": [
-        "tabs"
-    ],
+    "permissions": [],
     "background": {
         "scripts": ["background.bundle.js"],
         "persistent": false
     },
     "browser_action": {
-        "name": "diff-viewer"
+        "name": "code-editor"
     }
 }

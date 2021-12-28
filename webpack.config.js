@@ -7,6 +7,7 @@ module.exports = {
   mode: 'development',
   entry: {
     background: './src/ts/background.ts',
+    editor: './src/ts/editor.ts',
     'editor.worker': 'monaco-editor/esm/vs/editor/editor.worker.js',
     'json.worker': 'monaco-editor/esm/vs/language/json/json.worker',
     'css.worker': 'monaco-editor/esm/vs/language/css/css.worker',
@@ -27,6 +28,11 @@ module.exports = {
         {
           context: path.resolve(__dirname, 'src', 'html'),
           from: '*.html',
+          to: path.resolve(__dirname, 'dist')
+        },
+        {
+          context: path.resolve(__dirname, 'src', 'css'),
+          from: '*.css',
           to: path.resolve(__dirname, 'dist')
         }
       ]
